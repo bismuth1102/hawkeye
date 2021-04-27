@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/skillionBlue</item>
+        <item name="colorAccent">@color/skillionBlue</item>
+        <item name="android:navigationBarColor">@color/darkBlue</item>
+        <item name="android:textColorPrimary">@color/skillionBlue</item>
+        <item name="android:colorPrimary">@color/skillionBlue</item>
+        <item name="colorPrimary">@color/skillionBlue</item>
+        <item name="android:dropDownListViewStyle">@style/XSpinnerStyle</item>
+
+    </style>
+
+    <style name="XSpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <!-- 分隔线颜色 -->
+        <item name="android:divider">#DFDFDF</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+</resources>

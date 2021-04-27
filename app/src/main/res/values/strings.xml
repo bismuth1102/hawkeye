@@ -1,0 +1,20 @@
+<resources>
+    <string name="welcome_message"><b>Welcome!</b></string>
+    <string name="start_button">Get Started</string>
+    <string name="indicentPopupTitle">Incident Detected!</string>
+    <string name="incidentTextBody">We\'ve detected a potential crash from your device. Would you like to upload the video to the cloud?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alert">ALERT</string>
+    <string name="warning">WARNING</string>
+    <string name="watch">WATCH</string>
+    <string name="standby">STANDBY</string>
+    <string name="app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">Hawkeye</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string-array name="sounds">
+        <item>BEEP</item>
+        <item>CHIME</item>
+        <item>BELL</item>
+        <item>OFF</item>
+    </string-array>
+</resources>

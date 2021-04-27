@@ -1,0 +1,3 @@
+0=green "leaving"
+1=red   "approaching"
+2=blue  "don't know"

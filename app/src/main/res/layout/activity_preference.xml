@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="45dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="30dp"
+    android:background="@color/TRANSPARENT">
+
+    <TextView
+        android:id="@+id/preference_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:fontFamily="@font/roboto_condensed"
+        android:text="PREFERENCE"
+        android:textAlignment="center"
+        android:textColor="@color/skillionBlue"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/split0"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/WHITE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preference_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/WHITE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/split0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recording_loop_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="3dp"
+                android:fontFamily="@font/roboto_condensed"
+                android:text="RECORDING LOOP"
+                android:textAlignment="viewStart"
+                android:textColor="@color/skillionBlue"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/bar1_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="3dp"
+                android:max="100"
+                android:progress="40" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bar1_time_img"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="40 minutes"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/split1"
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <TextView
+                android:id="@+id/event_recording_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="3dp"
+                android:fontFamily="@font/roboto_condensed"
+                android:text="EVENT RECORDING"
+                android:textAlignment="viewStart"
+                android:textColor="@color/skillionBlue"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/bar2_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="3dp"
+                android:max="100"
+                android:progress="40" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bar2_time_img"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="40 minutes"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/split2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <TextView
+                android:id="@+id/sound_options_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="3dp"
+                android:fontFamily="@font/roboto_condensed"
+                android:text="SOUND OPTIONS"
+                android:textAlignment="viewStart"
+                android:textColor="@color/skillionBlue"
+                android:textSize="24sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.skillion.hawkeye.component.WhiteButton
+                    android:id="@+id/beep_btn"
+                    android:layout_width="97dp"
+                    android:layout_height="40dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="BEEP"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.skillion.hawkeye.component.WhiteButton
+                    android:id="@+id/beel_btn"
+                    android:layout_width="97dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="BEEL"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/beep_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.80"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/beep_btn" />
+
+
+                <com.skillion.hawkeye.component.WhiteButton
+                    android:id="@+id/chime_btn"
+                    android:layout_width="97dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="CHIME"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/beep_btn"
+                    app:layout_constraintStart_toStartOf="@+id/beep_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/beep_btn" />
+
+
+                <com.skillion.hawkeye.component.WhiteButton
+                    android:id="@+id/off_btn"
+                    android:layout_width="97dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="OFF"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/beel_btn"
+                    app:layout_constraintStart_toStartOf="@+id/beel_btn"
+                    app:layout_constraintTop_toTopOf="@+id/chime_btn"
+                    app:layout_constraintBottom_toBottomOf="@+id/chime_btn"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/split3"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/approach_time_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="3dp"
+                android:fontFamily="@font/roboto_condensed"
+                android:text="APPROACH TIME"
+                android:textAlignment="viewStart"
+                android:textColor="@color/skillionBlue"
+                android:textSize="24sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/timeChart_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/time_barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </com.github.mikephil.charting.charts.BarChart>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/timeChart_alert_img"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="ALERT"
+                    android:textAlignment="center"
+                    android:textColor="@color/RED"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/timeChart_layout"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_layout" />
+
+                <Button
+                    android:id="@+id/timeChart_warning_img"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="WARNING"
+                    android:textAlignment="center"
+                    android:textColor="@color/YELLOW"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/timeChart_alert_img"
+                    app:layout_constraintEnd_toStartOf="@+id/timeChart_watch_img"
+                    app:layout_constraintStart_toEndOf="@+id/timeChart_alert_img"
+                    app:layout_constraintTop_toTopOf="@+id/timeChart_alert_img" />
+
+                <Button
+                    android:id="@+id/timeChart_watch_img"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="WATCH"
+                    android:textAlignment="center"
+                    android:textColor="@color/GREEN"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/timeChart_alert_img"
+                    app:layout_constraintEnd_toEndOf="@+id/timeChart_layout"
+                    app:layout_constraintTop_toTopOf="@+id/timeChart_alert_img" />
+
+
+                <EditText
+                    android:id="@+id/timeChart_alert_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TextView"
+                    app:layout_constraintStart_toStartOf="@+id/timeChart_alert_img"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_alert_img" />
+
+                <TextView
+                    android:id="@+id/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="SECS"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/timeChart_alert_img"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_alert_img" />
+
+                <EditText
+                    android:id="@+id/timeChart_warning_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TextView1"
+                    app:layout_constraintStart_toStartOf="@+id/timeChart_warning_img"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_warning_img" />
+
+                <TextView
+                    android:id="@+id/TextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="SECS"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/timeChart_warning_img"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_warning_img" />
+
+                <EditText
+                    android:id="@+id/timeChart_watch_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TextView2"
+                    app:layout_constraintStart_toStartOf="@+id/timeChart_watch_img"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_watch_img" />
+
+                <TextView
+                    android:id="@+id/TextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="SECS"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/timeChart_watch_img"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_watch_img" />
+
+                <Button
+                    android:id="@+id/timeChart_set_btn"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="SET"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/timeChart_warning_edit" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/split4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ratio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="3dp"
+                android:fontFamily="@font/roboto_condensed"
+                android:text="HEIGHT RATIO"
+                android:textAlignment="viewStart"
+                android:textColor="@color/skillionBlue"
+                android:textSize="24sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ratioChart_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/ratio_barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                    </com.github.mikephil.charting.charts.BarChart>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/ratioChart_alert_img"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="ALERT"
+                    android:textAlignment="center"
+                    android:textColor="@color/RED"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/ratioChart_layout"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_layout" />
+
+                <Button
+                    android:id="@+id/ratioChart_warning_img"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="WARNING"
+                    android:textAlignment="center"
+                    android:textColor="@color/YELLOW"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ratioChart_alert_img"
+                    app:layout_constraintEnd_toStartOf="@+id/ratioChart_watch_img"
+                    app:layout_constraintStart_toEndOf="@+id/ratioChart_alert_img"
+                    app:layout_constraintTop_toTopOf="@+id/ratioChart_alert_img" />
+
+                <Button
+                    android:id="@+id/ratioChart_watch_img"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_white"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="WATCH"
+                    android:textAlignment="center"
+                    android:textColor="@color/GREEN"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ratioChart_alert_img"
+                    app:layout_constraintEnd_toEndOf="@+id/ratioChart_layout"
+                    app:layout_constraintTop_toTopOf="@+id/ratioChart_alert_img" />
+
+
+                <EditText
+                    android:id="@+id/ratioChart_alert_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TextView3"
+                    app:layout_constraintStart_toStartOf="@+id/ratioChart_alert_img"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_alert_img" />
+
+                <TextView
+                    android:id="@+id/TextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ratioChart_alert_img"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_alert_img" />
+
+                <EditText
+                    android:id="@+id/ratioChart_warning_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TextView4"
+                    app:layout_constraintStart_toStartOf="@+id/ratioChart_warning_img"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_warning_img" />
+
+                <TextView
+                    android:id="@+id/TextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ratioChart_warning_img"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_warning_img" />
+
+                <EditText
+                    android:id="@+id/ratioChart_watch_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/TextView5"
+                    app:layout_constraintStart_toStartOf="@+id/ratioChart_watch_img"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_watch_img" />
+
+                <TextView
+                    android:id="@+id/TextView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/ratioChart_watch_img"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_watch_img" />
+
+                <Button
+                    android:id="@+id/ratioChart_set_btn"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="SET"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ratioChart_warning_edit" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/split5"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/default_btn"
+                    android:layout_width="192dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/button_white"
+                    android:fontFamily="@font/roboto_condensed"
+                    android:text="RETURN TO DEFAULT"
+                    android:textAlignment="center"
+                    android:textColor="@color/skillionBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
