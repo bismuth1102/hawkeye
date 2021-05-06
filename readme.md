@@ -20,12 +20,13 @@
 
 * 关键的绘制方法采用的是异步回调方式。把A当作调用者，B当作draw方法，C当作实际需要draw的内容。为了保证程序不在draw这个io操作上卡顿，采用了多线程分离出了绘制部分。处理完数据后A告诉B可以调用了，B准备好后调用OverlayView类中synchronized draw方法，该方法会处理一个list中所有的DrawCallback。另一边C在被执行到的时候将自己要执行的具体的绘制方法注册到OverlayView类的list中。
 
-* native-lib.cpp是Java调用c++方法的接口。数据传输只能用使用基本变量，不能直接传递object。所以需要把bounding box的数据分解成float array，在c++中叫做jFloatArray。数据传输过程如下：（图）
+* native-lib.cpp是Java调用c++方法的接口。数据传输只能用使用基本变量，不能直接传递object。所以需要把bounding box的数据分解成float array，在c++中叫做jFloatArray。数据传输过程如下：<br>
+![image](https://github.com/bismuth1102/noilliks_hawkeye/blob/main/img/hawkeye.png)
 
 
 ## 学到的
-如果成员变量中存在context，不要使用单例模式，会导致内存泄漏。
-draw的回调模式
+如果成员变量中存在context，不要使用单例模式，会导致内存泄漏。<br>
+draw的回调模式<br>
 
 
 ## 参考
