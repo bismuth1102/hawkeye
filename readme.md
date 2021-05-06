@@ -2,16 +2,18 @@
 用于智能骑行，骑行者将手机与车尾摄像头相连。当有车辆靠近，app能够提示骑行者。<br>
 可以切换使用tflite模型和用yolov3-tiny训练的模型。<br><br>
 
+****
 
-名词：
-sort算法：simple online and realtime tracking algorithm。关注短时目标追踪，使用匈牙利算法和卡尔曼过滤器。
-匈牙利算法：一种寻找二分图的最大匹配的算法，在多目标跟踪问题中可以简单理解为寻找前后两帧的若干目标的匹配最优解的一种算法。
-卡尔曼过滤器：一种运动模型，用来对目标的轨迹进行预测，并且使用确信度较高的跟踪结果进行预测结果的修正。有三种情况：
-	已匹配轨迹Matched_Track。预测结果与检测结果匹配，则更新Kalman滤波器，并预测目标下一帧结果；
-	未匹配检测Unmatched_Detections。检测到目标未与任何一个预测结果匹配，此时认为新目标进入场景，产生新的目标ID；
-	无匹配轨迹Unmatched_Tracks。预测结果未与任何一个检测结果匹配，此时认为目标丢失，从待跟踪目标中删除该目标ID
+## 名词
 
-bounding box: 在camera preview内框住检测到的对象的矩形，可以为每个bounding box设置不同的颜色和标题。CNN模型会分析出检测到的物体的位置，SORT算法会过滤得到要展示的位置，MultiBoxTracker类的draw方法绘制bounding box。
+* sort算法：simple online and realtime tracking algorithm。关注短时目标追踪，使用匈牙利算法和卡尔曼过滤器。<br>
+* 匈牙利算法：一种寻找二分图的最大匹配的算法，在多目标跟踪问题中可以简单理解为寻找前后两帧的若干目标的匹配最优解的一种算法。<br>
+* 卡尔曼过滤器：一种运动模型，用来对目标的轨迹进行预测，并且使用确信度较高的跟踪结果进行预测结果的修正。有三种情况：<br>
+	已匹配轨迹Matched_Track。预测结果与检测结果匹配，则更新Kalman滤波器，并预测目标下一帧结果；<br>
+	未匹配检测Unmatched_Detections。检测到目标未与任何一个预测结果匹配，此时认为新目标进入场景，产生新的目标ID；<br>
+	无匹配轨迹Unmatched_Tracks。预测结果未与任何一个检测结果匹配，此时认为目标丢失，从待跟踪目标中删除该目标ID<br>
+
+* bounding box: 在camera preview内框住检测到的对象的矩形，可以为每个bounding box设置不同的颜色和标题。CNN模型会分析出检测到的物体的位置，SORT算法会过滤得到要展示的位置，MultiBoxTracker类的draw方法绘制bounding box。<br>
 
 
 细节：
